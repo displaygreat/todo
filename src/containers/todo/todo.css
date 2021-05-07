@@ -1,0 +1,14 @@
+.todo-wrapper {
+  width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #e5f9e0;
+  -webkit-box-shadow: 5px 5px 15px 0px #bbb;
+  box-shadow: 5px 5px 15px 0px #bbb;
+}
+@media (max-width: 768px) {
+  .todo-wrapper {
+    width: 90%;
+  }
+}

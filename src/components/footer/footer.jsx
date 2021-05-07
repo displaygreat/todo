@@ -20,7 +20,7 @@ const FILTERS_BTN = [
 
 const Footer = ({ amount, activeFilter, changeFilter }) => (
   <div className="footer">
-    <span className="amount">{`${amount} Tasks left`}</span>
+    <span className="amount">{`${amount} tasks left`}</span>
     <div className="btn-group">
       {FILTERS_BTN.map(({ text, id }) => (
         <button

@@ -1,0 +1,17 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  border-bottom: 3px solid #2f9c95;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.completed {
+  text-decoration: line-through;
+}
+.mark {
+  color: #2f9c95;
+}
+.fa-times {
+  color: #664147;
+}

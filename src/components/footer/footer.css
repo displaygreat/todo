@@ -1,0 +1,33 @@
+.amount {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  margin: 20px 0;
+}
+.amount::first-letter {
+  color: #2f9c95;
+  font-size: 18px;
+  margin-right: 5px;
+}
+.btn-group {
+  display: flex;
+  margin-top: 20px;
+}
+.filter-btn {
+  background-color: #40c9a2;
+  padding: 5px 10px;
+  margin-right: 20px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-size: 18px;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  border: 3px solid #2f9c95;
+}
+@media (max-width: 375px) {
+  .filter-btn {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
