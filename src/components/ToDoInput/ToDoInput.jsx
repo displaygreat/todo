@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 
 import './ToDoInput.css';
 
-const ToDoInput = ({ value, onChange }) => (
+const ToDoInput = ({ value, onChange, onKeyPress }) => (
   <div className="todo-input-wrapper">
     <i className="fas fa-plus" />
     <input
       className="todo-input"
       placeholder="Click to add task"
       onChange={onChange}
+      onKeyPress={onKeyPress}
       value={value}
     />
   </div>
@@ -17,11 +18,13 @@ const ToDoInput = ({ value, onChange }) => (
 
 ToDoInput.propTypes = {
   onChange: PropTypes.func,
+  onKeyPress: PropTypes.func,
   value: PropTypes.string,
 }
 
 ToDoInput.defaultProps = {
   onChange: () => {},
+  onKeyPress: () => {},
   value: '',
 }
 
