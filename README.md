@@ -4,4 +4,4 @@ Technologies: React, Redux
 
 Demo: https://displaygreat.github.io/todo/
 
-[![ng-Tickets-demo-video](https://github.com/displaygreat/displaygreat/blob/main/ng-Tickets-demo-video-600.gif)](https://youtu.be/2xf3aNm1DAs)
+[![ToDo-App-React-Redax](https://github.com/displaygreat/displaygreat/blob/main/ToDo-App-React-Redax.gif)](https://youtu.be/UMLfB46qAoE)
