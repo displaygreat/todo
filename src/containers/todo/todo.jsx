@@ -23,7 +23,7 @@ class ToDo extends Component {
   addTask = ({ key, target }) => {
     const { taskText } = this.state;
 
-    if (taskText.length > 3 && (key === "Enter" || target.className === "todo-button")) {
+    if (taskText.length > 2 && (key === "Enter" || target.className === "todo-button")) {
       const { addTask } = this.props;
 
       addTask(new Date().getTime(), taskText, false);
