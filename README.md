@@ -1,5 +1,15 @@
-## ToDo App - project as part of study
+# ToDo App
 
-Technologies: React, Redux
+Classic ToDo App built using React and Redux
 
-Demo: https://displaygreat.github.io/todo/
+## Tech stack
+
+Technologies
+- React
+- Redux
+
+## Demo
+
+https://displaygreat.github.io/todo/
+
+[![ToDo-App-React-Redax](https://github.com/displaygreat/displaygreat/blob/main/ToDo-App-React-Redax.gif)](https://youtu.be/UMLfB46qAoE)
