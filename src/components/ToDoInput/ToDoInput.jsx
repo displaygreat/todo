@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './ToDoInput.css';
 
-const ToDoInput = ({ value, onChange, onKeyPress }) => (
+const ToDoInput = ({ value, onChange, onKeyPress, onButtonClick }) => (
   <div className="todo-input-wrapper">
     <input
       className="todo-input"
@@ -12,18 +12,21 @@ const ToDoInput = ({ value, onChange, onKeyPress }) => (
       onKeyPress={onKeyPress}
       value={value}
     />
+    <button className="todo-button" onClick={onButtonClick}>+</button>
   </div>
 );
 
 ToDoInput.propTypes = {
   onChange: PropTypes.func,
   onKeyPress: PropTypes.func,
+  onButtonClick: PropTypes.func,
   value: PropTypes.string,
 }
 
 ToDoInput.defaultProps = {
   onChange: () => {},
   onKeyPress: () => {},
+  onButtonClick: () => {},
   value: '',
 }
 

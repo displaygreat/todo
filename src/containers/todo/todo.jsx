@@ -20,10 +20,10 @@ class ToDo extends Component {
     })
   }
 
-  addTask = ({ key }) => {
+  addTask = ({ key, target }) => {
     const { taskText } = this.state;
 
-    if (taskText.length > 3 && key === "Enter") {
+    if (taskText.length > 3 && (key === "Enter" || target.className === "todo-button")) {
       const { addTask } = this.props;
 
       addTask(new Date().getTime(), taskText, false);
@@ -58,7 +58,7 @@ class ToDo extends Component {
 
     return (
       <div className="todo-wrapper">
-        <ToDoInput onKeyPress={this.addTask} onChange={this.handleInputChange} value={taskText} />
+        <ToDoInput onKeyPress={this.addTask} onButtonClick={this.addTask} onChange={this.handleInputChange} value={taskText} />
         {isTasksExist && <ToDoList tasksList={filteredTasks} removeTask={removeTask} completeTask={completeTask} />}
         {isTasksExist && <Footer changeFilter={changeFilter} amount={tasksCounter} activeFilter={filters} />}
       </div>
